@@ -1,0 +1,25 @@
+if(localStorage.getItem("nombreDeUsuario") != null) {
+    let nombreDeCampo = document.getElementById("campoDeUsuario");
+    let rellenoDeCampo = "Mi Usuario";
+    let nombreDeusuario = localStorage.getItem("nombreDeUsuario"); 
+    nombreDeCampo.innerHTML = nombreDeusuario;
+   
+}
+
+ 
+    document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("autos").addEventListener("click", function() {
+        localStorage.setItem("catID", 101);
+        window.location = "products.html"
+    });
+    document.getElementById("juguetes").addEventListener("click", function() {
+        localStorage.setItem("catID", 102);
+        window.location = "products.html"
+    });
+    document.getElementById("muebles").addEventListener("click", function() {
+        localStorage.setItem("catID", 103);
+        window.location = "products.html"
+    });
+});
+
+
